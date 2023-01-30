@@ -147,6 +147,10 @@ body {
   background-size: cover;
   background-color: var(--black-bg-cl);
   padding: 188px 0;
+  max-width: 1440px;
+  height: 600px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -312,9 +316,9 @@ body {
   margin-bottom: 8px;
 }
 
-.customers-container {
-  margin-top: 130px;
-  margin-bottom: 120px;
+.customers-section {
+  padding-top: 130px;
+  padding-bottom: 120px;
 }
 
 .customers-subtitle {
@@ -335,17 +339,19 @@ body {
   height: 88px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #8e8f99;
+  border: 1px solid currentColor;
   border-radius: 4px;
+  color: #8e8f99;
 }
 
 .customers-link:hover,
 .customers-link:focus {
-  border: 1px solid #404bbf;
+  color: #404bbf;
+  
 }
 
 .customers-icons {
-  fill: #8e8f99;
+  fill: currentColor;
 }
 
 .customers-icons:hover,
@@ -390,7 +396,6 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  margin: 8px;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -402,10 +407,10 @@ body {
   margin-left: 120px;
 }
 
-.footer-right-part {
+/* .footer-right-part {
   width: 208px;
   height: 80px;
-}
+} */
 
 .footer-social-elements {
   fill: var(--light-bg-cl);
@@ -434,8 +439,6 @@ body {
   line-height: calc(24 / 16);
   letter-spacing: 0.04em;
   color: var(--iris-txt-cl);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   background: #f4f4fd;
   padding: 12px 24px;
@@ -452,6 +455,8 @@ body {
 .btn-nav:focus {
   color: var(--white-txt-cl);
   background-color: var(--ocean-cl);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .subtitle-description {
@@ -496,8 +501,11 @@ body {
   gap: 48px 24px;
 }
 
-.brd-photo:hover,
-.brd-photo:focus {
-  border: 1px solid #e7e9fc;
+.gallery-link {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.gallery-link:hover,
+.gallery-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
