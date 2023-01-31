@@ -502,7 +502,8 @@ body {
 }
 
 .gallery-link {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  display: block;
+  box-shadow: 0px 1px 6px rgb(46 47 66 / 8%);
 }
 
 .gallery-link:hover,
